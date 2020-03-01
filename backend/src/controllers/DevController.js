@@ -40,5 +40,11 @@ module.exports = {
     }
 
     return res.json(dev);
+  },
+
+  async destroy(req, res) {
+    await Dev.findByIdAndRemove(req.params.id);
+
+    return res.send();
   }
 };
