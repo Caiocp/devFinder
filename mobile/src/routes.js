@@ -22,7 +22,11 @@ export default function Routes() {
         }}
       >
         <Stack.Screen name="Main" component={Main} />
-        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen
+          name="Profile"
+          component={Profile}
+          options={{ title: "Perfil do Github" }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
