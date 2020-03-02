@@ -87,7 +87,9 @@ export default function Main({ navigation }) {
             />
             <Callout
               onPress={() => {
-                navigation.navigate("Profile", { github_username: "caiocp" });
+                navigation.navigate("Profile", {
+                  github_username: user.github_username
+                });
               }}
             >
               <View style={styles.callout}>
